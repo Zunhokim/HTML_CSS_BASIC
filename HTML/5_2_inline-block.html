@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Block 2</title>
+    <style>
+    div {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+    }
+    span {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+    }
+    .inline-block {
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <span>1</span><span>2</span><span>3</span> -->
+    <div class="inline-block">1</div>
+    <div class="inline-block">2</div>
+    <div class="inline-block">3</div>
+</body>
+</html>
+
+<!--
+    div, span
+    둘다 영역 태그이다. 
+    div는 영역 분할을 하며, 컨테이너 역할도 한다. 
+    span은 영역태그이고, 특정 아이템을 꾸밀때 사용함.
+
+    block vs inline
+    div는 block level element이다. (전체 공간, 세로배치, width&height 적용 O)
+    span은 inline level element이다. (콘텐츠만큼, 가로배치, width&height 적용 X)
+-->
