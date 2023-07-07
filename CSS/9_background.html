@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+
+    <style>
+        .red{
+            background-color: red;
+            width: 120px;
+            height: 120px;
+        }
+
+        /*저장된 이미지의 크기는 가로 240px지만, 실제 실행을 하면 가득 차 보인다. 
+        이는 배경 크기에 맞춰 지정된 이미지가 반복 되기 때문에, 가득 차서 표시가 되는 것이며,
+        반복을 조정하고 싶다면, background-repeat에서 속성값을 조정하면 된다.*/
+        .image{
+            background-image: url("../assets/images/floral.jpeg");
+            background-repeat: repeat;
+            background-position: center;
+            width: 200px;
+            height: 400px;
+            border: 1px solid black;
+            display: inline-block;
+            overflow-y: scroll;
+        }
+
+        .attachment-scroll {
+            background-attachment: scroll;
+        }
+
+        .attachment-fixed {
+            background-attachment: fixed;
+        }
+
+        .attachment-local {
+            background-attachment: local;
+        }
+    </style>
+</head>
+<body>
+    <h3>background-color</h3>
+
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+        <h4>scroll</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore porro dolorem qui recusandae quod doloremque quos itaque delectus at quas, illum nihil eligendi nisi autem obcaecati sunt architecto tenetur in!
+        Error nobis dolorum, veritatis facilis earum totam porro quis corrupti fugit aliquid nisi sequi vero repellendus accusantium rem, eligendi pariatur aperiam et eos minima! Ratione optio possimus iusto minus nesciunt?
+        Architecto reiciendis veniam in! Nam hic blanditiis reprehenderit ad suscipit at exercitationem, cum sapiente, totam temporibus accusamus? Asperiores et in dolorem, aliquam distinctio placeat. Quaerat odio beatae ab temporibus quasi?
+        Cum facere consectetur nam voluptatibus culpa quo id eaque aliquam doloribus cupiditate. Vitae cupiditate minus, tempora unde illo quae commodi, nam autem eos sit, ex nemo reprehenderit quas numquam nostrum.
+        Vitae eaque tenetur harum labore et? Adipisci ipsam, mollitia quas necessitatibus aspernatur ratione maiores possimus voluptates non velit obcaecati porro dolorem dolorum magnam alias dolores provident! Voluptas pariatur vero rerum.
+        Deleniti quod ipsam a nemo repudiandae reiciendis harum dolorum libero dolores, maiores ad placeat eum hic unde excepturi temporibus! Aliquid ratione, earum ex maxime officia corporis aperiam necessitatibus blanditiis dicta?
+        Numquam repellendus, veritatis odio culpa enim nisi quibusdam quae officiis molestiae. Esse, possimus sit quam consequatur assumenda dolore, provident laudantium aut obcaecati sed dolores, libero quod autem illo voluptas? Voluptate?
+        Eligendi et pariatur deserunt ipsa aperiam debitis recusandae eos culpa similique mollitia quis earum eum error sed, cum nemo necessitatibus deleniti dolore ut ex omnis quae. Commodi repudiandae impedit dolor?
+    </div>
+    <div class="image attachment-fixed">
+        <h4>fixed</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore porro dolorem qui recusandae quod doloremque quos itaque delectus at quas, illum nihil eligendi nisi autem obcaecati sunt architecto tenetur in!
+        Error nobis dolorum, veritatis facilis earum totam porro quis corrupti fugit aliquid nisi sequi vero repellendus accusantium rem, eligendi pariatur aperiam et eos minima! Ratione optio possimus iusto minus nesciunt?
+        Architecto reiciendis veniam in! Nam hic blanditiis reprehenderit ad suscipit at exercitationem, cum sapiente, totam temporibus accusamus? Asperiores et in dolorem, aliquam distinctio placeat. Quaerat odio beatae ab temporibus quasi?
+        Cum facere consectetur nam voluptatibus culpa quo id eaque aliquam doloribus cupiditate. Vitae cupiditate minus, tempora unde illo quae commodi, nam autem eos sit, ex nemo reprehenderit quas numquam nostrum.
+        Vitae eaque tenetur harum labore et? Adipisci ipsam, mollitia quas necessitatibus aspernatur ratione maiores possimus voluptates non velit obcaecati porro dolorem dolorum magnam alias dolores provident! Voluptas pariatur vero rerum.
+        Deleniti quod ipsam a nemo repudiandae reiciendis harum dolorum libero dolores, maiores ad placeat eum hic unde excepturi temporibus! Aliquid ratione, earum ex maxime officia corporis aperiam necessitatibus blanditiis dicta?
+        Numquam repellendus, veritatis odio culpa enim nisi quibusdam quae officiis molestiae. Esse, possimus sit quam consequatur assumenda dolore, provident laudantium aut obcaecati sed dolores, libero quod autem illo voluptas? Voluptate?
+        Eligendi et pariatur deserunt ipsa aperiam debitis recusandae eos culpa similique mollitia quis earum eum error sed, cum nemo necessitatibus deleniti dolore ut ex omnis quae. Commodi repudiandae impedit dolor?
+    </div>
+    <div class="image attachment-local">
+        <h4>local</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore porro dolorem qui recusandae quod doloremque quos itaque delectus at quas, illum nihil eligendi nisi autem obcaecati sunt architecto tenetur in!
+        Error nobis dolorum, veritatis facilis earum totam porro quis corrupti fugit aliquid nisi sequi vero repellendus accusantium rem, eligendi pariatur aperiam et eos minima! Ratione optio possimus iusto minus nesciunt?
+        Architecto reiciendis veniam in! Nam hic blanditiis reprehenderit ad suscipit at exercitationem, cum sapiente, totam temporibus accusamus? Asperiores et in dolorem, aliquam distinctio placeat. Quaerat odio beatae ab temporibus quasi?
+        Cum facere consectetur nam voluptatibus culpa quo id eaque aliquam doloribus cupiditate. Vitae cupiditate minus, tempora unde illo quae commodi, nam autem eos sit, ex nemo reprehenderit quas numquam nostrum.
+        Vitae eaque tenetur harum labore et? Adipisci ipsam, mollitia quas necessitatibus aspernatur ratione maiores possimus voluptates non velit obcaecati porro dolorem dolorum magnam alias dolores provident! Voluptas pariatur vero rerum.
+        Deleniti quod ipsam a nemo repudiandae reiciendis harum dolorum libero dolores, maiores ad placeat eum hic unde excepturi temporibus! Aliquid ratione, earum ex maxime officia corporis aperiam necessitatibus blanditiis dicta?
+        Numquam repellendus, veritatis odio culpa enim nisi quibusdam quae officiis molestiae. Esse, possimus sit quam consequatur assumenda dolore, provident laudantium aut obcaecati sed dolores, libero quod autem illo voluptas? Voluptate?
+        Eligendi et pariatur deserunt ipsa aperiam debitis recusandae eos culpa similique mollitia quis earum eum error sed, cum nemo necessitatibus deleniti dolore ut ex omnis quae. Commodi repudiandae impedit dolor?
+    </div>
+    <div style="height: 1000px; width: 100%; background-color: Black">
+
+    </div>
+</body>
+</html>
