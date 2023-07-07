@@ -38,6 +38,30 @@
         .attachment-local {
             background-attachment: local;
         }
+
+        .background-size {
+            width: 600px;
+            height: 300px;
+            background-image: url("../assets/images/football.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            border: 1px solid black
+        }
+        
+        .linear-gradient {
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            background: linear-gradient(45deg, rgb(91, 255, 241) 30%, rgb(23, 135, 255), rgb(98, 36, 255));
+        }
+
+        .radial-gradient {
+            width: 500px;
+            height: 200px;
+            border: 1px solid blue;
+            background: radial-gradient(circle at 50% 50%, red, orange, yellow, green, blue, darkblue, violet)
+        }
     </style>
 </head>
 <body>
@@ -79,8 +103,14 @@
         Numquam repellendus, veritatis odio culpa enim nisi quibusdam quae officiis molestiae. Esse, possimus sit quam consequatur assumenda dolore, provident laudantium aut obcaecati sed dolores, libero quod autem illo voluptas? Voluptate?
         Eligendi et pariatur deserunt ipsa aperiam debitis recusandae eos culpa similique mollitia quis earum eum error sed, cum nemo necessitatibus deleniti dolore ut ex omnis quae. Commodi repudiandae impedit dolor?
     </div>
-    <div style="height: 1000px; width: 100%; background-color: Black">
+    <h3>Background-Size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
 
-    </div>
+    <br><br><br><br><br>
+    <div style="height: 1000px; width: 10%; background-color: White; border: 1px solid black;"></div>
 </body>
 </html>
