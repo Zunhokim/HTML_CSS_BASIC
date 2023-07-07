@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        nav {
+            background-color: #34495e;
+            width: 100%;
+            height: 80px;
+        }
+        nav li{
+            display: inline-block;
+            margin: 0 8px;
+            line-height: 80px;
+        }
+        nav a {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+        a.active {
+            border: 1px solid white;
+        }
+        a:hover {
+            color: cyan;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></a></li>
+            <li><a href="#">About</a></a></li>
+            <li><a href="#">Services</a></a></li>
+            <li><a href="#">Contact</a></a></li>
+            <li><a href="#">Feedback</a></a></li>
+        </ul>
+    </nav>    
+</body>
+</html>
